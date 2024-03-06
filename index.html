@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>    	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+	<meta charset="UTF-8">
+        <div class="container">
+			<h1 id="titulo"></h1>
+			<div class="linea">
+				<img id="imagenJuego" src="img/Quest.png" style="width: 300px;">		
+				<div class="columna">
+					<div class="container__texto">
+						<h2 id="descripcion"></h2>
+					</div>	
+					<input id="numeroUsuario" type="text" onkeypress="return soloNumeros(event)">
+					<div class="linea">
+						<div class="container__boton">
+							<button onclick="verificar()">Verificar</button>
+						</div>
+						<div class="container__boton">
+							<button onclick="reiniciar()">Reiniciar</button>				
+						</div>
+					</div>					
+					<div class="container__texto">
+						<p id="resultado"></p>
+					</div>	
+				</div>
+				<img id="imagenTrophy" src="" style="width: 150px; display: none;">
+			</div>
+		</div>		
+    <script src="app.js"></script>
+</body>
+</html>
